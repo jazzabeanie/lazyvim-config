@@ -13,4 +13,19 @@ return {
       }, -- I chose to use rg as a shortcut instead of the default sr because I already remember rg for searching with ripgrep.
     },
   },
+  {
+    "echasnovski/mini.animate",
+    opts = {
+      cursor = {
+        timing = function()
+          return 5
+        end,
+      },
+      scroll = {
+        timing = function()
+          return 5
+        end,
+      },
+    },
+  },
 }

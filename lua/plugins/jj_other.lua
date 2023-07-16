@@ -13,7 +13,6 @@ return {
   },
 
   -- To try:
-  -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-animate.md
   -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
   -- use something like this to trim whitespace (may need to create an autogroup command): https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md
 }
