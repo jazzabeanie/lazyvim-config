@@ -9,7 +9,7 @@ return {
   -- { "hrsh7th/cmp-buffer", enabled = false },
   -- { "hrsh7th/cmp-path", enabled = false },
   -- { "saadparwaiz1/cmp_luasnip", enabled = false },
-  { "echasnovski/mini.pairs", enabled = false }, -- alternative to vim-surround?
+  -- { "echasnovski/mini.pairs", enabled = false }, -- https://github.com/echasnovski/mini.nvim/discussions/272
   { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
   -- { "JoosepAlviste/nvim-ts-context-commentstring", enabled = false },
   -- { "echasnovski/mini.comment", enabled = false },
@@ -19,10 +19,8 @@ return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   -- { "nvim-pack/nvim-spectre", enabled = false },
   -- { "nvim-telescope/telescope.nvim", enabled = false },
-  { "ggandor/flit.nvim", enabled = false },
-  { "ggandor/leap.nvim", enabled = false },
   -- { "folke/which-key.nvim", enabled = false },
-  { "lewis6991/gitsigns.nvim", enabled = false },
+  -- { "lewis6991/gitsigns.nvim", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
   { "echasnovski/mini.bufremove", enabled = false },
   -- { "folke/trouble.nvim", enabled = false },

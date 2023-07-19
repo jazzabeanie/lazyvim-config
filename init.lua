@@ -2,5 +2,5 @@
 require("config.lazy")
 
 vim.notify(
-  "Some useful shortcuts: <leader>tg, <leader>ff, <leader>/, <leader>fr. Also use :Notifications to see a history of them"
+  "Some useful shortcuts: <leader>rg, <leader>ff, <leader>/, <leader>fr. Also use :Notifications to see a history of them"
 )

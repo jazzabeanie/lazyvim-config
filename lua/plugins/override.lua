@@ -28,4 +28,5 @@ return {
       },
     },
   },
+  -- { "echasnovski/mini.pairs" }, -- I may want to add spacing to pair at some point. see https://github.com/echasnovski/mini.nvim/discussions/272
 }
