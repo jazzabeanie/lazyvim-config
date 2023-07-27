@@ -3,28 +3,23 @@
 return {
   -- coding
   { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
+  { "echasnovski/mini.animate", enabled = false }, -- makes bit cursor jumps and scrolling look nice, but is slow for big files.
   -- editor
   { "nvim-neo-tree/neo-tree.nvim", enabled = false }, -- this is about navigating the file tree. Implement later
   -- { "RRethy/vim-illuminate", enabled = false },  -- Doesn't seem to work in all languages
   { "echasnovski/mini.bufremove", enabled = false }, -- this is about buffers. Implement later
+  -- { "folke/flash.nvim", enabled = false }, -- :checkhealth will issue a warning about <vscode>, I think because it's not installed.
   -- treesitter
-  {
-    "nvim-treesitter/nvim-treesitter",
-    enabled = false,
-  },
+  -- {"niim-treesitter/nvim-treesitter", enabled = false },
   -- ui
   -- { "rcarriga/nvim-notify", enabled = false }, -- puts messages in the top right corner instead of at the bottom. Means I will have to use :Notifications instead of :Messages
-  { "stevearc/dressing.nvim", enabled = false },
-  { "akinsho/bufferline.nvim", enabled = false },
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  { "echasnovski/mini.indentscope", enabled = false },
-  { "folke/noice.nvim", enabled = false },
-  { "goolord/alpha-nvim", enabled = false },
-  { "SmiteshP/nvim-navic", enabled = false },
-  { "nvim-tree/nvim-web-devicons", enabled = false },
-  { "MunifTanjim/nui.nvim", enabled = false },
+  -- { "stevearc/dressing.nvim", enabled = false }, -- what does this actually do? I couldn't see a difference when it was dissabled
+  -- { "akinsho/bufferline.nvim", enabled = false }, - Not sure what this does. Maybe you need to have buffers in tabs to be able to see it. Not sure how to do that. Also, I need to fix termguicolors for this to work. See :CheckHealth
+  -- { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  -- { "folke/noice.nvim", enabled = false },  -- Needs nui.nvim to run properly. I think this might conflict with my own <leader>s mapping
+  -- { "MunifTanjim/nui.nvim", enabled = false },  -- noice.nvim needs this (as it's currently setup)
+  { "goolord/alpha-nvim", enabled = false }, -- This is a dashboard when you open nvim without opening a file. I don't think I want it because I almost always want a new file when I open nvim
+  -- { "SmiteshP/nvim-navic", enabled = false },  -- Doesn't seem to work for python
   -- util
-  { "dstein64/vim-startuptime", enabled = false },
-  { "folke/persistence.nvim", enabled = false },
-  { "tpope/vim-repeat", enabled = false },
+  -- { "folke/persistence.nvim", enabled = false }, -- session management. Work with buffers, which I haven't figured out yet.
 }
