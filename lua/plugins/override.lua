@@ -22,6 +22,19 @@ return {
     end,
   },
 
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      stages = "static",
+      max_width = function()
+        local current_window = vim.api.nvim_get_current_win()
+        local window_width = vim.api.nvim_win_get_width(current_window)
+        local max = math.floor(window_width * 0.1)
+        return max
+      end,
+    },
+  },
+
   -- I added this to make it fast, but it seems still slow for big jumps.
   -- {
   --   "echasnovski/mini.animate",

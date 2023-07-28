@@ -12,3 +12,4 @@ vim.keymap.set("n", "<leader>yp", ":let @+ = expand('%:p:h')<cr>", { desc = "Cop
 --   "y:.,$s/\\V<c-r>\"//gc|1,''-&&|'<<left><left><left><left><left><left><left><left><left><left><left><left><left><left>",
 --   { desc = "Substitue the select text" }
 -- )
+vim.keymap.set("n", "<leader>tn", ":Telescope notify<cr>", { desc = "Opens up a list of notifications" })
