@@ -26,13 +26,29 @@ return {
     "rcarriga/nvim-notify",
     opts = {
       stages = "static",
-      max_width = function()
-        local current_window = vim.api.nvim_get_current_win()
-        local window_width = vim.api.nvim_win_get_width(current_window)
-        local max = math.floor(window_width * 0.1)
-        return max
-      end,
+      -- Used to limit the maximum width of a notification
+      -- max_width = function()
+      --   local current_window = vim.api.nvim_get_current_win()
+      --   local window_width = vim.api.nvim_win_get_width(current_window)
+      --   local max = math.floor(window_width * 0.1)
+      --   return max
+      -- end,
     },
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      table.insert(opts.ensure_installed, "prettierd")
+    end,
+  },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    opts = function(_, opts)
+      local nls = require("null-ls")
+      table.insert(opts.sources, nls.builtins.formatting.prettierd)
+    end,
   },
 
   -- I added this to make it fast, but it seems still slow for big jumps.

@@ -15,4 +15,6 @@ return {
   -- To try:
   -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
   -- use something like this to trim whitespace (may need to create an autogroup command): https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md
+  -- Use vim-slime: https://github.com/jpalardy/vim-slime
+  -- https://github.com/img-paste-devs/img-paste.vim
 }
