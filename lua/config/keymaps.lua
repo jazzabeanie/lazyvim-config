@@ -4,7 +4,7 @@
 
 vim.keymap.set("n", "<leader>a", "gg^VGy", { desc = "Copy entire file" })
 -- vim.keymap.set("i", "<leader>p", '"+p', { desc = "Paste in insert mode" })
-vim.keymap.set("n", "<leader>yp", ":let @+ = expand('%:p:h')<cr>", { desc = "Copy the path of the current file" })
+vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%:p:h')<cr>", { desc = "Copy the path of the current file" })
 -- conflicts with some plugins, dissabling for now:
 -- vim.keymap.set(
 --   "v",
@@ -23,3 +23,5 @@ vim.keymap.set(
   ":!quarto render %:p --to html<CR>",
   { desc = "Render the current file to html with quarto" }
 )
+
+vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreview<CR>", { desc = "Preview markdown file in broswer" })

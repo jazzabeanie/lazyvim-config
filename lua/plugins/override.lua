@@ -19,6 +19,8 @@ return {
     "nvim-telescope/telescope.nvim",
     config = function()
       require("telescope").load_extension("notify")
+      -- Not using neoclip anymore
+      -- require("telescope").load_extension("neoclip") -- required to make neoclip work immidiatly on startup
     end,
   },
 

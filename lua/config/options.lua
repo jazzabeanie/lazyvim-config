@@ -5,3 +5,4 @@
 -- set here because leader must be set before lazy.nvim
 -- vim.keymap.set("n", ",", "<Nop>", { silent = true })
 vim.g.mapleader = ","
+vim.opt.winbar = "%=%m %f"
