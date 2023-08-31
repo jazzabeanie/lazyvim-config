@@ -6,12 +6,12 @@ vim.keymap.set("n", "<leader>a", "gg^VGy", { desc = "Copy entire file" })
 -- vim.keymap.set("i", "<leader>p", '"+p', { desc = "Paste in insert mode" })
 vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%:p:h')<cr>", { desc = "Copy the path of the current file" })
 -- conflicts with some plugins, dissabling for now:
--- vim.keymap.set(
---   "v",
---   "<leader>s",
---   "y:.,$s/\\V<c-r>\"//gc|1,''-&&|'<<left><left><left><left><left><left><left><left><left><left><left><left><left><left>",
---   { desc = "Substitue the select text" }
--- )
+vim.keymap.set(
+  "v",
+  "<leader>ss",
+  "y:.,$s/\\V<c-r>\"//gc|1,''-&&|'<<left><left><left><left><left><left><left><left><left><left><left><left><left><left>",
+  { desc = "Substitue the selected text" }
+)
 vim.keymap.set("n", "<leader>tn", ":Telescope notify<cr>", { desc = "Opens up a list of notifications" })
 vim.keymap.set("n", "<leader>rr", ":lua vim.lsp.buf.rename()<CR>", { desc = "Rename current variable under cursor" })
 vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close current buffer" })
@@ -25,3 +25,5 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreview<CR>", { desc = "Preview markdown file in broswer" })
+
+vim.keymap.set('i', '<Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })

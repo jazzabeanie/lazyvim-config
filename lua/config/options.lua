@@ -6,3 +6,4 @@
 -- vim.keymap.set("n", ",", "<Nop>", { silent = true })
 vim.g.mapleader = ","
 vim.opt.winbar = "%=%m %f"
+-- vim.g.codeium_disable_bindings = 1

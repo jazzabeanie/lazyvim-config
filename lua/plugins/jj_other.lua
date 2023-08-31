@@ -12,6 +12,16 @@ return {
     },
   },
 
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      autoformat = false,
+      -- Enable this to show formatters used in a notification
+      -- Useful for debugging formatter issues
+      format_notify = true,
+    },
+  },
+
   -- I don't think this is required as I can use the OS clipboard manager
   -- -- clipboard manager: https://github.com/AckslD/nvim-neoclip.lua
   -- {
@@ -42,6 +52,18 @@ return {
     "godlygeek/tabular",
   },
 
+  -- allows you to close the buffer without messing up splits
+  {
+    "moll/vim-bbye",
+    keys = { { "<leader>qw", ":Bdelete<CR>", "Close buffer without messing up splits" } },
+  },
+
+  {
+  'Exafunction/codeium.vim',
+  config = function ()
+    vim.keymap.set('i', '<leader><Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+  end
+  },
   -- To try:
   -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
   -- use something like this to trim whitespace (may need to create an autogroup command): https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md
