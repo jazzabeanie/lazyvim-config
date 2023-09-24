@@ -62,6 +62,8 @@ return {
   'Exafunction/codeium.vim',
   config = function ()
     vim.keymap.set('i', '<leader><Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+    -- vim.keymap.set('i', '<leader>?', function () return vim.fn['codeium#Complete']() end, { expr = true })  -- why does this not work?
+    -- vim.g.codeium_manual = true
   end
   },
   -- To try:
