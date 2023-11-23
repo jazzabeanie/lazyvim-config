@@ -1,3 +1,4 @@
+-- This video came from https://www.youtube.com/watch?v=_NiWhZeR-MY&t=3s
 return {
   {
     "neovim/nvim-lspconfig",

@@ -21,11 +21,12 @@ return {
 
   -- Needs nui.nvim to run properly. I think this might conflict with my own <leader>s mapping
   -- Has an issue with formatting the out put of `:map`. https://github.com/folke/noice.nvim/issues/259
-  -- { "folke/noice.nvim", enabled = false },  
+  -- { "folke/noice.nvim", enabled = false },
 
   -- { "MunifTanjim/nui.nvim", enabled = false },  -- noice.nvim needs this (as it's currently setup)
-  { "goolord/alpha-nvim", enabled = false }, -- This is a dashboard when you open nvim without opening a file. I don't think I want it because I almost always want a new file when I open nvim
+  { "goolord/alpha-nvim", enabled = false }, -- This is a dashboard when you open nvim without opening a file. I don't think I want it because I almost always want a new file when I open nvim. Why is this enabled now?
   -- { "SmiteshP/nvim-navic", enabled = false },  -- Doesn't seem to work for python
   -- util
   -- { "folke/persistence.nvim", enabled = false }, -- session management. Work with buffers, which I haven't figured out yet.
+  { "nvimtools/none-ls.nvim",     enabled = false }, -- https://github.com/LazyVim/LazyVim/discussions/1522
 }

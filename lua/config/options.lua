@@ -8,4 +8,5 @@ vim.g.mapleader = ","
 vim.opt.winbar = "%=%m %f"
 -- vim.g.codeium_disable_bindings = 1
 vim.opt.linebreak = true
-
+vim.g.autoformat = false -- globally
+-- vim.b.autoformat = false -- buffer-local

@@ -15,7 +15,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      autoformat = false,
+      -- `nvim-lspconfig.opts.autoformat` is deprecated. Please use `vim.g.autoformat` instead
+      -- autoformat = false, 
       -- Enable this to show formatters used in a notification
       -- Useful for debugging formatter issues
       format_notify = true,

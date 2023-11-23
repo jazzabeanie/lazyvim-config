@@ -38,20 +38,21 @@ return {
     },
   },
 
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      table.insert(opts.ensure_installed, "prettierd")
-    end,
-  },
+  -- removing prettierd when null-ls was renamed to none-ls. I think the default formatter and linter changed also
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = function(_, opts)
+  --     table.insert(opts.ensure_installed, "prettierd")
+  --   end,
+  -- },
 
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      table.insert(opts.sources, nls.builtins.formatting.prettierd)
-    end,
-  },
+  --{
+  --  "jose-elias-alvarez/none-ls.nvim",
+  --  opts = function(_, opts)
+  --    local nls = require("none-ls")
+  --    table.insert(opts.sources, nls.builtins.formatting.prettierd)
+  --  end,
+  --},
 
   -- I added this to make it fast, but it seems still slow for big jumps.
   -- {
