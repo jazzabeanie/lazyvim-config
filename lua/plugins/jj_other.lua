@@ -69,6 +69,7 @@ return {
   },
   
   {
+    -- TODO: consider going back to mini-surround and makeing the key bindings like vim-surround. mini-surround supports dot repeat out of the box.
     "tpope/vim-surround",  -- may not be better than mini.surround. Maybe I just like they key bindings.
   },
   -- To try:
