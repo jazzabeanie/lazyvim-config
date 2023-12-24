@@ -2,7 +2,7 @@
 
 return {
   -- coding
-  -- { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
+  { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
   -- { "echasnovski/mini.animate", enabled = false }, -- makes bit cursor jumps and scrolling look nice, but is slow for big files. Needs to be also added in lua/config/lazy.lua
   -- editor
   -- { "nvim-neo-tree/neo-tree.nvim", enabled = false }, -- this is about navigating the file tree.

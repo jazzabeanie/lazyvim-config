@@ -67,6 +67,10 @@ return {
     -- vim.g.codeium_manual = true
   end
   },
+  
+  {
+    "tpope/vim-surround",  -- may not be better than mini.surround. Maybe I just like they key bindings.
+  },
   -- To try:
   -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
   -- use something like this to trim whitespace (may need to create an autogroup command): https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md

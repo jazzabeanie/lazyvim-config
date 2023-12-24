@@ -37,6 +37,19 @@ return {
       -- end,
     },
   },
+  
+  {
+  "folke/flash.nvim",
+  keys = {
+      -- The only thing I really used was the search flash functionality, so I don't need the other bindings. Also, they get in the way of 
+      -- vim-surrou's default binding
+      { "s", mode = { "n", "x", "o" }, false },
+      { "S", mode = { "n", "o", "x" }, false },
+      { "r", mode = "o", false },
+      { "R", mode = { "o", "x" }, false },
+      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+    },
+  },
 
   -- removing prettierd when null-ls was renamed to none-ls. I think the default formatter and linter changed also
   -- {
