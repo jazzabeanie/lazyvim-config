@@ -2,7 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader>a", "gg^VGy", { desc = "Copy entire file" })
+vim.keymap.set("n", "<leader>cy", "gg^VGy", { desc = "Copy/yank entire file" })
 -- vim.keymap.set("i", "<leader>p", '"+p', { desc = "Paste in insert mode" })
 vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%:p:h')<cr>", { desc = "Copy the path of the current file" })
 -- conflicts with some plugins, dissabling for now:
@@ -26,4 +26,6 @@ vim.keymap.set(
 
 vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreview<CR>", { desc = "Preview markdown file in broswer" })
 
-vim.keymap.set('i', '<Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+-- vim.keymap.set('i', '<Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+
+-- new keymap to switch between buffers
