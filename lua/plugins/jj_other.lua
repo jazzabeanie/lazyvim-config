@@ -59,14 +59,14 @@ return {
     keys = { { "<leader>qw", ":Bdelete<CR>", "Close buffer without messing up splits" } },
   },
 
-  {
-  'Exafunction/codeium.vim',
-  config = function ()
-    vim.keymap.set('i', '<leader><Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
-    -- vim.keymap.set('i', '<leader>?', function () return vim.fn['codeium#Complete']() end, { expr = true })  -- why does this not work?
-    -- vim.g.codeium_manual = true
-  end
-  },
+  -- {
+  -- 'Exafunction/codeium.vim',
+  -- config = function ()
+  --   vim.keymap.set('i', '<leader><Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+  --   -- vim.keymap.set('i', '<leader>?', function () return vim.fn['codeium#Complete']() end, { expr = true })  -- why does this not work?
+  --   -- vim.g.codeium_manual = true
+  -- end
+  -- },
   
   {
     -- TODO: consider going back to mini-surround and makeing the key bindings like vim-surround. mini-surround supports dot repeat out of the box.

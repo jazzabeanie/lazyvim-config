@@ -24,8 +24,4 @@ vim.keymap.set(
   { desc = "Render the current file to html with quarto" }
 )
 
-vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreview<CR>", { desc = "Preview markdown file in broswer" })
-
 -- vim.keymap.set('i', '<Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
-
--- new keymap to switch between buffers
