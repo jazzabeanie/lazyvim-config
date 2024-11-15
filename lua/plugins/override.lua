@@ -29,12 +29,12 @@ return {
     opts = {
       stages = "static",
       -- Used to limit the maximum width of a notification
-      -- max_width = function()
-      --   local current_window = vim.api.nvim_get_current_win()
-      --   local window_width = vim.api.nvim_win_get_width(current_window)
-      --   local max = math.floor(window_width * 0.1)
-      --   return max
-      -- end,
+      max_width = function()
+        local current_window = vim.api.nvim_get_current_win()
+        local window_width = vim.api.nvim_win_get_width(current_window)
+        local max = math.floor(window_width * 0.2)
+        return max
+      end,
     },
   },
   
@@ -43,13 +43,27 @@ return {
   keys = {
       -- The only thing I really used was the search flash functionality, so I don't need the other bindings. Also, they get in the way of 
       -- vim-surrou's default binding
-      { "s", mode = { "n", "x", "o" }, false },
-      { "S", mode = { "n", "o", "x" }, false },
-      { "r", mode = "o", false },
-      { "R", mode = { "o", "x" }, false },
+      -- { "s", mode = { "n", "x", "o" }, false },
+      { "S", mode = { "x" }, false },  -- because in visual mode "S" clashes with vim-surround
+      -- { "r", mode = "o", false },
+      -- { "R", mode = { "o", "x" }, false },
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
+
+  -- {
+  --   "folke/snacks.nvim",
+  --   opts = {
+  --     terminal = {
+  --       win = {
+  --         -- Makes all terminals open on the right instead of the bottom.
+  --         -- However, also applies when a cmd is provdied which means lazyvim
+  --         -- will open on the right instead of floating.
+  --         position = "right",
+  --       },
+  --     },
+  --   }
+  -- }
 
   -- removing prettierd when null-ls was renamed to none-ls. I think the default formatter and linter changed also
   -- {
