@@ -10,3 +10,4 @@ vim.opt.winbar = "%=%m %f"
 vim.opt.linebreak = true
 vim.g.autoformat = false -- globally
 -- vim.b.autoformat = false -- buffer-local
+vim.g.ai_cmp = false
