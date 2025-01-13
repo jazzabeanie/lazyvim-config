@@ -27,3 +27,4 @@ vim.keymap.set(
 )
 
 -- vim.keymap.set('i', '<Right>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+vim.keymap.set('i', '<C-h>', "<C-w>", { expr = false })
