@@ -27,6 +27,7 @@ return {
   {
     "rcarriga/nvim-notify",
     opts = {
+      top_down = false,
       stages = "static",
       -- Used to limit the maximum width of a notification
       max_width = function()
