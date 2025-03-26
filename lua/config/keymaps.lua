@@ -14,7 +14,9 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "<leader>tn", ":Telescope notify<cr>", { desc = "Opens up a list of notifications" })
 vim.keymap.set("n", "<leader>rr", ":lua vim.lsp.buf.rename()<CR>", { desc = "Rename current variable under cursor" })
-vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close current buffer" })
+-- vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>bd", ":Bdelete<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>qw", ":echo 'use <leader>bd to close buffer'<CR>", { desc = "deprecated" })
 vim.keymap.set("n", "<leader>ft-", ':lua Snacks.terminal.toggle({"bash"}, { win = { position = "bottom" }})<CR>', { desc = "Open a terminal at the bottom" })
 vim.keymap.set("n", "<leader>ft|", ':lua Snacks.terminal.toggle({"bash"}, { win = { position = "right" }})<CR>', { desc = "open a terminal at the right" })
 

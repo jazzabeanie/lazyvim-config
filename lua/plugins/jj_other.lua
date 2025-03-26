@@ -56,7 +56,7 @@ return {
   -- allows you to close the buffer without messing up splits
   {
     "moll/vim-bbye",
-    keys = { { "<leader>qw", ":Bdelete<CR>", "Close buffer without messing up splits" } },
+    -- keys = { { "<leader>qw", ":Bdelete<CR>", { desc = "Close buffer without messing up splits" } } },
   },
 
   -- {
