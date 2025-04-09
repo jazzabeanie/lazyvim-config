@@ -51,6 +51,20 @@ return {
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",  -- GitHub Copilot Chat plugin
+    opts = {
+      model = "claude-3.7-sonnet",
+      prompts = {
+        TODOs = {
+          prompt = "Make change to the code to address areas flagged with TODO.",
+          system_prompt = "You are a expert software engineer. You are given a code snippet with TODO comments. Change only the code that is relevant to the TODO. Do not make any other changes.",
+          mapping = "<leader>at",
+          description = "Address TODOs",
+        },
+      },
+    },
+  },
 
   -- {
   --   "folke/snacks.nvim",
