@@ -51,6 +51,9 @@ return {
 
   {
     "godlygeek/tabular",
+    keys = {
+      { "<leader>T", ":Tabularize /\\s\\{2,}/<CR>", mode = "n", desc = "Tabularize on 2+ spaces" },
+    },
   },
 
   -- allows you to close the buffer without messing up splits
