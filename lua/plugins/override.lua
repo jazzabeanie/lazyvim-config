@@ -54,13 +54,25 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",  -- GitHub Copilot Chat plugin
     opts = {
-      model = "claude-3.7-sonnet",
+      model = "gpt-4.1",
       prompts = {
         TODOs = {
           prompt = "Make change to the code to address areas flagged with TODO.",
           system_prompt = "You are a expert software engineer. You are given a code snippet with TODO comments. Change only the code that is relevant to the TODO. Do not make any other changes.",
           mapping = "<leader>at",
           description = "Address TODOs",
+        },
+      },
+      -- Keymap for chat window only
+      window = {
+        chat = {
+          mappings = {
+            ["<leader>m"] = {
+              action = ":CopilotChatModels<CR>",
+              description = "Show Copilot Chat Models",
+              mode = "n",
+            },
+          },
         },
       },
     },
