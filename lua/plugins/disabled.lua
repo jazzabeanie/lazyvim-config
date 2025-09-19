@@ -2,12 +2,12 @@
 
 return {
   -- coding
-  { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
+  -- { "echasnovski/mini.surround", enabled = false }, -- alternative to vim-surround?
   -- { "echasnovski/mini.animate", enabled = false }, -- makes bit cursor jumps and scrolling look nice, but is slow for big files. Needs to be also added in lua/config/lazy.lua
   -- editor
   -- { "nvim-neo-tree/neo-tree.nvim", enabled = false }, -- this is about navigating the file tree.
   -- { "RRethy/vim-illuminate", enabled = false },  -- Doesn't seem to work in all languages
-  { "echasnovski/mini.bufremove", enabled = false }, -- this is about buffers. Implement later
+  -- { "echasnovski/mini.bufremove", enabled = false }, -- this is about buffers. Implement later
   -- { "hrsh7th/nvim-cmp", enabled = false }, -- this give autocompletions
   -- { "hrsh7th/cmp-nvim-lsp", enabled = false }, -- this is the lsp for nvim-cmp
   -- { "folke/flash.nvim", enabled = false }, -- :checkhealth will issue a warning about <vscode>, I think because it's not installed.

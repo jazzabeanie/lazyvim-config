@@ -71,10 +71,6 @@ return {
   -- end
   -- },
   
-  {
-    -- TODO: consider going back to mini-surround and makeing the key bindings like vim-surround. mini-surround supports dot repeat out of the box.
-    "tpope/vim-surround",  -- may not be better than mini.surround. Maybe I just like they key bindings.
-  },
   -- To try:
   -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
   -- use something like this to trim whitespace (may need to create an autogroup command): https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-trailspace.md
