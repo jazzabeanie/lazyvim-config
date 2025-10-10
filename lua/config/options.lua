@@ -11,3 +11,18 @@ vim.opt.linebreak = true
 vim.g.autoformat = false -- globally
 -- vim.b.autoformat = false -- buffer-local
 vim.g.ai_cmp = false
+
+if vim.fn.has('wsl') == 1 then
+  vim.g.clipboard = {
+    name = "win32yank",
+    copy = {
+      ["+"] = "win32yank.exe -i --crlf",
+      ["*"] = "win32yank.exe -i --crlf",
+    },
+    paste = {
+      ["+"] = "win32yank.exe -o --lf",
+      ["*"] = "win32yank.exe -o --lf",
+    },
+    cache_enabled = 0,
+  }
+end
