@@ -54,7 +54,7 @@ return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",  -- GitHub Copilot Chat plugin
     opts = {
-      model = "gpt-5",
+      model = "gpt-4.1",
       prompts = {
         TODOs = {
           prompt = "Make change to the code to address areas flagged with TODO.",
