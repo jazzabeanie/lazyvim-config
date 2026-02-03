@@ -52,7 +52,7 @@ return {
     },
   },
   {
-    "CopilotC-Nvim/CopilotChat.nvim",  -- GitHub Copilot Chat plugin
+    "CopilotC-Nvim/CopilotChat.nvim", -- GitHub Copilot Chat plugin
     opts = {
       model = "gpt-4.1",
       prompts = {
@@ -74,6 +74,18 @@ return {
             },
           },
         },
+      },
+    },
+    keys = {
+      {
+        "<leader>ag",
+        function()
+          local input = vim.fn.input("Agent prompt: ")
+          if input ~= "" then
+            require("CopilotChat").ask(">@copilot\n>$claude-sonnet-4.5\n\n" .. input)
+          end
+        end,
+        desc = "Autonomous Agent",
       },
     },
   },
