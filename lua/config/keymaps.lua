@@ -5,6 +5,7 @@
 vim.keymap.set("n", "<leader>cy", "gg^VGy", { desc = "Copy/yank entire file" })
 -- vim.keymap.set("i", "<leader>p", '"+p', { desc = "Paste in insert mode" })
 vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%:p:h')<cr>", { desc = "Copy the path of the current file" })
+vim.keymap.set("n", "<leader>fP", ":let @+ = expand('%:p')<cr>", { desc = "Copy the full path of the current file" })
 -- conflicts with some plugins, dissabling for now:
 vim.keymap.set(
   "v",
